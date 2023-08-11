@@ -2,6 +2,7 @@ import { useState } from "react";
 import Switch from "../components/switch/switch";
 import Profile from "../components/profile/profile";
 import Links from "../components/links/links";
+import SocialLinks from "../components/socialLinks/socialLinks";
 
 import "./App.css";
 
@@ -25,6 +26,12 @@ const App = () => {
                     <Links link={"http://tiktok.com/@heynardelli"}>TikTok</Links>
                     <Links link={"#"}>Portifólio</Links>
                 </ul>
+            </div>
+            <div id="socialLinks">
+                <SocialLinks href={"#"} icon={"logo-github"}></SocialLinks>
+                <SocialLinks href={"#"} icon={"logo-instagram"}></SocialLinks>
+                <SocialLinks href={"#"} icon={"logo-tiktok"}></SocialLinks>
+                <SocialLinks href={"#"} icon={"logo-linkedin"}></SocialLinks>
             </div>
         </div>
     )

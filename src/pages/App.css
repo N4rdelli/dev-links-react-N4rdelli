@@ -57,3 +57,12 @@ body{
     gap: 16px;
     padding: 24px;
 }
+
+/* Ícones das redes sociais */
+#socialLinks {
+    display: flex;
+    justify-content: center;
+    padding: 24px;
+    gap: 16px;
+    font-size: 24px;
+}
