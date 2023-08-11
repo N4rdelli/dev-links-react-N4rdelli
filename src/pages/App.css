@@ -1,7 +1,59 @@
-.react{
-    text-align: center;
-    font-size: 72pt;
-    font-weight: bold;
-    background: red;
-    color: aquamarine;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Variáveis que podem ser usadas para todo o documento */
+/* Dark Mode */
+:root{
+    --bg-url: url(../img/bg-desktop.jpg);
+    --text-color: #ffffff;
+    --stroke-color: rgba(255, 255, 255, 0.5);
+    --surface-color: rgba(255, 255, 255, 0.1);
+    --surface-color-hover: rgba(255, 255, 255, 0.5);
+    --switch-gb-url: url(../img/moonStars.svg);
+    --highlight-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Light Mode */
+.light{
+    --bg-url: url(../img/bg-desktop-light.jpg);
+    --text-color: #000000;
+    --stroke-color: rgba(0, 0, 0, 0.5);
+    --surface-color: rgba(0, 0, 0, 0.1);
+    --surface-color-hover: rgba(0, 0, 0, 0.5);
+    --switch-gb-url: url(../img/sun.svg);
+    --highlight-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Modificações gerais, se aplicam ao body inteiro. */
+body *{
+    font-family: "Inter", sans-serif;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+body{
+    background: var(--bg-url) no-repeat top center / cover;
+    height: 100vh;
+}
+
+/* Div principal da página, contém todas as outras*/
+#container{
+    width: 100%;
+    max-width: 588px;
+    margin: 56px auto 0px;
+    padding: 0px 24px;
+}
+
+/* Links */
+#links ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px;
 }
