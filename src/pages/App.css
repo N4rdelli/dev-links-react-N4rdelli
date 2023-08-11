@@ -30,13 +30,13 @@
 }
 
 /* Modificações gerais, se aplicam ao body inteiro. */
-body *{
+#App *{
     font-family: "Inter", sans-serif;
     color: var(--text-color);
     text-decoration: none;
 }
 
-body{
+#App {
     background: var(--bg-url) no-repeat top center / cover;
     height: 100vh;
 }
@@ -45,8 +45,9 @@ body{
 #container{
     width: 100%;
     max-width: 588px;
-    margin: 56px auto 0px;
+    margin: 0px auto 0px;
     padding: 0px 24px;
+    padding-top: 56px;
 }
 
 /* Links */
@@ -65,4 +66,14 @@ body{
     padding: 24px;
     gap: 16px;
     font-size: 24px;
+}
+
+/* Media Queries */
+@media(max-width: 700px){
+    :root{
+        --br-url: url(../img/bg-mobile.jpg);
+    }
+    .light{
+        --br-url: url(../img/bg-mobile-light.jpg);
+    }
 }
