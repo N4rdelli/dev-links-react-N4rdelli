@@ -38,7 +38,7 @@
 
 #App {
     background: var(--bg-url) no-repeat top center / cover;
-    height: 100vh;
+    height: 100%;
 }
 
 /* Div principal da página, contém todas as outras*/
